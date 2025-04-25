@@ -1,0 +1,25 @@
+From 9ad140043d6192a9a9ebedcd745cc40e27eaca02 Mon Sep 17 00:00:00 2001
+From: Jan-Willem de Bruyn <git@jan-willem.dev>
+Date: Fri, 25 Apr 2025 22:00:29 +0200
+Subject: [PATCH] Enabled cgroups cpumax
+
+---
+ arch/arm64/configs/longanpi_3h_defconfig | 2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git a/arch/arm64/configs/longanpi_3h_defconfig b/arch/arm64/configs/longanpi_3h_defconfig
+index 1748e770b..a7d7e36e0 100644
+--- a/arch/arm64/configs/longanpi_3h_defconfig
++++ b/arch/arm64/configs/longanpi_3h_defconfig
+@@ -17,6 +17,8 @@ CONFIG_CGROUP_DEVICE=y
+ CONFIG_CGROUP_PERF=y
+ CONFIG_CGROUP_BPF=y
+ CONFIG_CGROUP_MISC=y
++CONFIG_FAIR_GROUP_SCHED=y
++CONFIG_CFS_BANDWIDTH=y
+ CONFIG_NAMESPACES=y
+ CONFIG_USER_NS=y
+ CONFIG_CHECKPOINT_RESTORE=y
+-- 
+2.49.0
+
