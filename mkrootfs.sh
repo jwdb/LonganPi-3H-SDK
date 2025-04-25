@@ -55,7 +55,7 @@ case "$1" in
         ;;
     "nogui")
         DESKTOP_PACKAGE=""
-        ;&
+        ;;
     *)
         KVM_PACKAGE=""
         ;;
