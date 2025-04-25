@@ -32,10 +32,10 @@ then
 	git remote add origin "${URL}"
 	git fetch origin "${COMMIT}" --depth=1
 	git checkout "${COMMIT}"
-	#find ../../linux/ -name *.patch | sort | while read line
-	#do
-	#	git am < $line
-	#done
+	find ../../linux/ -name *longanpi_3h_defconfig*.patch | sort | while read line
+	do
+		git am < $line
+	done
 	cd ../../
 fi
 
