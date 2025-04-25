@@ -69,7 +69,7 @@ jobs:
             sudo rm -rf LonganPi-3H-SDK
 
       - name: 'Upload Artifact'
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           retention-days: 30
           name: lpi3h-${{ env.BOARD }}-${{ env.BUILD_ID }}
