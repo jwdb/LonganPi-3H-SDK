@@ -9,7 +9,7 @@ fi
 
 if [ -z "$COMMIT" ]
 then
-	export COMMIT="3b47bc037bd44f142ac09848e8d3ecccc726be99"
+	export COMMIT="master"
 fi
 
 if [ -z "$CROSS_COMPILE" ]
