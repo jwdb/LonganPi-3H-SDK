@@ -1,4 +1,4 @@
-rom 320e1e3c55d19a8e3e1414bc6b065b881cf7adfb Mon Sep 17 00:00:00 2001
+From 320e1e3c55d19a8e3e1414bc6b065b881cf7adfb Mon Sep 17 00:00:00 2001
 From: Jan-Willem de Bruyn <git@jan-willem.dev>
 Date: Sat, 10 May 2025 00:00:06 +0200
 Subject: [PATCH] Add DM_CRYPT
