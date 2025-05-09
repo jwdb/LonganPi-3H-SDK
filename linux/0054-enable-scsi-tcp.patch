@@ -1,0 +1,25 @@
+From 2302652e4caaf44ba38156fd3b2a6a778fd5075f Mon Sep 17 00:00:00 2001
+From: Jan-Willem de Bruyn <git@jan-willem.dev>
+Date: Fri, 9 May 2025 21:55:47 +0200
+Subject: [PATCH] Add SCSI TCP
+
+---
+ arch/arm64/configs/longanpi_3h_defconfig | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+diff --git a/arch/arm64/configs/longanpi_3h_defconfig b/arch/arm64/configs/longanpi_3h_defconfig
+index a7d7e36e0..ea748c3b7 100644
+--- a/arch/arm64/configs/longanpi_3h_defconfig
++++ b/arch/arm64/configs/longanpi_3h_defconfig
+@@ -512,7 +512,8 @@ CONFIG_SCSI=y
+ # CONFIG_SCSI_PROC_FS is not set
+ CONFIG_BLK_DEV_SD=y
+ # CONFIG_BLK_DEV_BSG is not set
+-# CONFIG_SCSI_LOWLEVEL is not set
++CONFIG_SCSI_LOWLEVEL=y
++CONFIG_SCSI_TCP=y
+ CONFIG_NETDEVICES=y
+ CONFIG_BONDING=m
+ CONFIG_DUMMY=m
+-- 
+2.49.0
